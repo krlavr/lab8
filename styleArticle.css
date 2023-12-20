@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Baloo Paaji";
+    src: url("BalooPaaji-Regular.ttf") format("truetype");
+}
+
+h2 {
+    font-family: 'Jost';
+    font-style: bold;
+    font-size: 3em;
+    color: #5EBE90;  
+}
+
+p {
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+}
+
+a {
+    font-family: 'Jost';
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Baloo Paaji';
+    font-style: normal;
+    font-size: 8em;
+    text-align: center;
+    color: #EB915E;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 400px;
+    row-gap: 5%;
+    grid-template-columns: 14% auto 14%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 80px auto;
+    grid-template-columns: 14% auto 14%;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+
+
+.popular-articles {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.article-block {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+
+    
+}
+
+
+.logo {
+    margin-right: 20px;  
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20%;
+    white-space: nowrap;
+}
+
+.nav-item {
+    padding: 5px 10px;
+    margin-left: 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.active {
+    background-color: #1e3a78;
+}
+
+button {
+    background-color: #5EBE90;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    background: #5EBE90;
+    border-radius: 59px;
+    font-family: 'Jost';
+    font-style: normal;
+    line-height: 23px;
+    color: #000000;
+    cursor: pointer;
+
+}
+
+
+.article-item-desc {
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.article-img {
+
+    width: 650px;
+    height: 600px;
+    object-fit: cover; 
+}
+
+.article-ingred {
+    font-family: 'Jost';
+    font-style: normal;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #EB915E;
+    padding: 0% 6% 3% 100px;
+    text-align: left;
+}
+
+.article-text-ingred {
+    font-size: 1em;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: #85632F;
+    padding: 0% 6% 3% 100px;
+    text-align: left;
+}
+
+footer {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 14% auto 14%;
+    grid-template-rows: 5% auto;
+    width: 100%;
+    background-color: antiquewhite;
+    row-gap: 30%;
+}
+
+  .contacts {
+    display: grid;
+    grid-template-rows: 20% auto;
+    column-gap: 20%;
+  }
+  
+  .contacts_el {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    flex-wrap: wrap;
+  }
+
+  .all-articles {
+    display: flex;
+    font-family: 'Jost';
+    font-style: normal;
+    text-decoration: none;
+    color: #5EBE90;
+    cursor: pointer;
+    padding-top: 5%;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .article-item {
+    display: flex;
+    flex-direction: column;   
+    justify-content: flex-start;
+    border-radius: 10px;
+}
