@@ -3,6 +3,11 @@
     src: url("BalooPaaji-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Jost";
+    src: url("Jost-VariableFont_wght.ttf") format("truetype");
+}
+
 h2 {
     font-family: 'Jost';
     font-style: bold;
